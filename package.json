@@ -1,13 +1,27 @@
 {
   "name": "node-web-app",
   "version": "1.0.0",
-  "description": "Node.js on Docker",
-  "author": "First Last <first.last@example.com>",
+  "description": "Create the docker image with:\r ~~~~~\r docker build -t <your-username>/node-web-app\r ~~~~~",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/picolloo/node-web-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/picolloo/node-web-app/issues"
+  },
+  "homepage": "https://github.com/picolloo/node-web-app#readme",
   "dependencies": {
-    "express": "^4.16.1"
+    "boom": "^7.3.0",
+    "fastify": "^1.13.1",
+    "fastify-swagger": "^0.16.1",
+    "mongoose": "^5.3.15"
   }
 }
