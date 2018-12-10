@@ -7,5 +7,5 @@ docker build -t <your-username>/node-web-app
 
 Run the docker image with:
 ~~~~~
-docker run -p 1099:8080 -d <your-username>/node-web-app
+docker run -p <PORT>:8080 -d <your-username>/node-web-app
 ~~~~~
